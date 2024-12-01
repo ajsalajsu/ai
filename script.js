@@ -39,7 +39,7 @@ async function send() {
 
 async function getAIResponse(userMessage) {
     try {
-        const response = await fetch(' https://render.com/docs/web-services#port-binding', {
+        const response = await fetch('https://aichat-bot-2.onrender.com', {
             method: 'POST',
             headers: { 'Content-Type': 'application/json' },
             body: JSON.stringify({ message: userMessage })
