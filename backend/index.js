@@ -7,7 +7,6 @@ import cors from 'cors';
 const app = express();
 const groq = new Groq({ apiKey: process.env.GROQ_API_KEY || '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' });
 
-// Enable JSON parsing
 app.use(cors());
 app.use(express.json());
 
